@@ -1,0 +1,69 @@
+﻿/* Estilos para la página de inicio de la tienda saludable */
+
+/* Fondo de color para toda la pantalla */
+body {
+    background-color: #E9F57F; /* Color de fondo suave */
+}
+
+/* Fuente personalizada para un aspecto más saludable */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333; /* Color de texto principal */
+}
+
+/* Encabezado */
+h1.display-4 {
+    font-family: 'Verdana', sans-serif; /* Fuente más llamativa */
+    font-weight: bold; /* Texto en negrita */
+    color: #4CAF50; /* Color de encabezado */
+}
+
+/* Fondo del encabezado */
+.text-center {
+    background-color: #E6F7EA; /* Fondo verde suave */
+    padding: 20px;
+}
+
+/* Estilos para los productos */
+.card {
+    border: 1px solid #D3D3D3; /* Borde suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #F8EA5E; /* Fondo amarillo suave para las tarjetas de productos */
+}
+
+.card-title {
+    font-weight: bold; /* Texto en negrita */
+    font-family: 'Verdana', sans-serif; /* Fuente más llamativa */
+    color: #333; /* Color de título */
+}
+
+.card-text {
+    color: #666; /* Color de texto */
+}
+
+.card-img-top {
+    max-height: 200px; /* Altura máxima de la imagen del producto */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #FFA500; /* Color naranja suave para botones primarios */
+    border-color: #F8EA5E;
+    color: #fff; /* Texto blanco */
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #F8EA5E !important; /* Añadido !important para asegurar la especificidad */
+}
+
+/* Cambiar el color de los enlaces para que sean más suaves */
+a {
+    color: #4CAF50;
+}
+
+    a:hover {
+        color: #1E703D; /* Cambiar a un tono más oscuro cuando se pasa el ratón por encima */
+    }

@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Formulario de Compras";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="ClienteId">Cliente:</label>
+        <select class="form-control" id="ClienteId" name="ClienteId">
+            <option value="">Selecciona un cliente</option>
+            @foreach (var cliente in Model.Clientes)
+            {
+                <option value="@cliente.ClienteId">@cliente.Nombre</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="ProductoId">Producto:</label>
+        <select class="form-control" id="ProductoId" name="ProductoId">
+            <option value="">Selecciona un producto</option>
+            @foreach (var producto in Model.Productos)
+            {
+                <option value="@producto.ProductoId">@producto.Nombre</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Cantidad">Cantidad:</label>
+        <input type="number" class="form-control" id="Cantidad" name="Cantidad" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Realizar Compra</button>
+</form>
+
